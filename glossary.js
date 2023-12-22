@@ -47,7 +47,7 @@ const glossary = [
 {target:`.some()`, content:`指定された関数で実装されているテストに、配列の中の少なくとも 1 つの要素が合格するかどうかを判定するメソッド。配列の中で指定された関数が true を返す要素を見つけた場合は true を返し、そうでない場合は false を返す。それ以外の場合は false を返す。<br>array.***(callbackFn)<br>const array = [1, 2, 3, 4, 5];<br>array.***(even)→true`},
 {target:`.values()`, content:`配列の各インデックスの値を含む新しい「配列イテレーター」オブジェクトを返すメソッド。<br>array.***()`},
 {target:`.with()`, content:`ブラケット記法に対応するコピーメソッド。指定された位置の要素を指定された値で置き換えた新しい配列を返す。<br>arrayInstance.***(index, value)<br>const arr = [1, 2, 3, 4, 5];<br>arr.***(2, 6)→[1, 2, 6, 4, 5], arr→[1, 2, 3, 4, 5]`},
-{target:`Array.from()`, content:`反復可能オブジェクトや配列風オブジェクトからシャローコピーされた、新しい Array インスタンスを生成する静的メソッド。<br>***.***([1, 2, 3], (x) => x + x))→[2, 4, 6]`},
+{target:`Array.from()`, content:`反復可能オブジェクトや配列風オブジェクトからシャローコピーされた、新しい Array インスタンスを生成する静的メソッド。<br>***.***([1, 2, 3], (x) => x + x))→[2, 4, 6]<br>***.***('foo')→['f', 'o', 'o']`},
 {target:`Array.isArray()`, content:`渡された値が配列かどうかを判断する静的メソッド。<br>***.***([1, 3, 5]);→true<br>***.***('[]'));→false`},
 {target:`Array.of()`, content:`引数の数や型にかかわらず、可変長引数から新しい配列インスタンスを生成する静的メソッド。<br>const array = ***.***('foo', 2, 'bar', true);→['foo', 2, 'bar', true]`},
 {target:`.toReversed()`, content:`要素を逆順に並べた新しい配列を返すメソッド。<br>newArray = array.***()`},
