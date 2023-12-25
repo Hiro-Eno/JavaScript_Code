@@ -55,6 +55,7 @@ const glossary = [
 {target:`.toSorted()`, content:`.sort() メソッドに対応するコピーメソッド。要素を昇順にソートした新しい配列を返す。<br>const values = [1, 10, 21, 2];<br>const sortedValues = values.***((a, b) => a - b);<br>sortedValues→[1, 2, 10, 21], values→[1, 10, 21, 2]`},
 {target:`.toSpliced()`, content:`.splice() メソッドに対応するコピーメソッド。指定された位置の要素を除去したり置き換えたりした新しい配列を返す。<br>***(startIndex, deleteCount, item1, item2)<br>const months = ['Jan', 'Feb', 'May'];<br>const months1 = months.***(1, 1, 'Feb', 'Mar');<br>months1→['Jan', 'Feb', 'Mar', 'May'], months→['Jan', 'Feb', 'May']`},
 {target:`.toString()`, content:`指定された配列とその要素を表す文字列を返すメソッド。<br>const array = [1, 2, 'a', '1a'];<br>array1.***()→'1,2,a,1a'`},
+{target:`Array()`, content:`配列オブジェクトを生成するコンストラクター。スプレッド構文と組合せることでn個のundefinedからなる新しい配列を作成できる。これと.forEach等を組合せることでn回の繰り返し作業が可能（空はスキップされるためスプレッド構文による展開が必要）。<br>***('りんご', 'バナナ')→['りんご', 'バナナ']<br>***(2)→[空、空]<br>[...***(3)]→[undefined, undefined, undefined]`},
 {target:`Array.from()`, content:`反復可能オブジェクトや配列風オブジェクトからシャローコピーされた、新しい Array インスタンスを生成する静的メソッド。<br>***.***([1, 2, 3], (x) => x + x))→[2, 4, 6]<br>***.***('foo')→['f', 'o', 'o']`},
 {target:`Array.isArray()`, content:`渡された値が配列かどうかを判断する静的メソッド。<br>***.***([1, 3, 5]);→true<br>***.***('[]'));→false`},
 {target:`Array.of()`, content:`引数の数や型にかかわらず、可変長引数から新しい配列インスタンスを生成する静的メソッド。<br>const array = ***.***('foo', 2, 'bar', true);→['foo', 2, 'bar', true]`},
