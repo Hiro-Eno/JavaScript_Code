@@ -13,6 +13,7 @@ const glossary = [
 {target:`for`, content:`ループ構造を表現するためのキーワード。指定された条件で繰り返し処理を行う。<br>*** (initialization; condition; afterthought) {statement}`},
 {target:`while`, content:`ループ構造を表現するためのキーワード。指定された条件が真の場合にコードを実行し、条件が偽になるまで繰り返す。<br>*** (condition) {statement}`},
 {target:`Number()`, content:`Number オブジェクトを生成します。関数として呼び出された場合は、数値型のプリミティブ値を返すコンストラクター。<br>***('123')→123`},
+{target:`String()`, content:`新しい String オブジェクトを生成します。関数として呼び出された場合は、文字列型のプリミティブ値を返すコンストラクター。<br>***(123)→'123'`},
 {target:`parseInt()`, content:`文字列の引数を解釈し、指定された基数 （数学的記数法の底）の整数値を返す関数。<br>***('123')→123`},
 {target:`parseFloat()`, content:`引数を (必要に応じてまず文字列に変換してから) 解釈し、浮動小数点値を返す関数。<br>***('123.123')→123.123`},
 {target:`.concat()`, content:`二つの配列を結合するメソッド。新しい配列を返す。<br>array.***(array)`},
