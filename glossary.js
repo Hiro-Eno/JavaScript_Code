@@ -168,7 +168,7 @@ const glossary = [
 {target:`.querySelectorAll()`, content:`要素の複数選択するDOMメソッド。<br>document.***(selectors)`},
 {target:`.removeEventListener`, content:`イベントリスナーの削除するDOMメソッド。<br>element.***(type, listener)`},
 {target:`.removeChild()`, content:`子要素の削除するDOMメソッド。<br>document.***(child)`},
-"{target:`setTimeout()`, content:`一定時間後に指定された関数を実行するDOMメソッド。<br>***(code, delay)<br>***(() => {<br>  console.log(""Delayed for 1 second."");<br>}, ""1000"");`},"
+{target:`setTimeout()`, content:`一定時間後に指定された関数を実行するDOMメソッド。<br>***(code, delay)<br>***(() => {<br>  console.log('Delayed for 1 second.');<br>}, '1000');`},
 {target:`location.reload()`, content:`現在のURLの再読み込みのDOMメソッド。<br>***.***()`},
 {target:`.location`, content:`現在のURL。代入で新しいURLへ移行するDOMプロパティ。<br>document.***`},
 {target:`placeholder`, content:`入力欄のプレースホルダを取得または設定するプロパティ。<br>***=`},
