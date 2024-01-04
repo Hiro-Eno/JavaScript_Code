@@ -17,7 +17,7 @@ const glossary = [
 {target:`Function()`, content:`関数オブジェクトを生成するコンストラクター。コンストラクターを直接呼び出すと動的に関数を生成することができまる。グローバルスコープで実行される関数のみを生成。<br>const sum = new ***('a', 'b', 'return a + b');<br>sum(2, 6)→8`},
 {target:`parseInt()`, content:`文字列の引数を解釈し、指定された基数 （数学的記数法の底）の整数値を返す関数。<br>***('123')→123`},
 {target:`parseFloat()`, content:`引数を (必要に応じてまず文字列に変換してから) 解釈し、浮動小数点値を返す関数。<br>***('123.123')→123.123`},
-{target:`.concat()`, content:`二つの配列を結合するメソッド。新しい配列を返す。<br>array.***(array)<br>arr2 = [...arr1, ...arr2]→arr2 = arr2.concat(arr)（スプレッド構文と同様の働き）`},
+{target:`.concat()`, content:`二つの配列を結合するメソッド。新しい配列を返す。<br>array.***(array)<br>arr2 = [...arr, ...arr2]→arr2 = arr2.concat(arr)（スプレッド構文と同様の働き）`},
 {target:`.filter()`, content:`配列の要素をフィルタリングするためのメソッド。テストに合格した要素だけを抽出したシャローコピーの配列を作成する。。<br>array.***(callbackFn, thisArg)`},
 {target:`.forEach()`, content:`配列の各要素に対して指定された関数を実行するメソッド。<br>array.***(callbackFn, thisArg)`},
 {target:`.length`, content:`要素の数を調べるプロパティ。<br>array.***`},
