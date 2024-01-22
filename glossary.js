@@ -107,7 +107,6 @@ const glossary = [
 {target:`continue`, content:`ループの次の繰り返しに進むためのキーワード。<br>***;`},
 {target:`debugger`, content:`プログラムの実行を一時停止し、デバッガの実行を可能にする。<br>***;`},
 {target:`delete`, content:`オブジェクトからプロパティを削除する演算子。<br>*** expression;`},
-{target:`nan`, content:`nan`},
 {target:`finally`, content:`try文のブロックが終了した後に実行されるブロック。<br>try {tryStatements} catch (exceptionVar) {catchStatements} *** {finallyStatements}`},
 {target:`in`, content:`オブジェクトが指定されたプロパティを持っているかをチェックする演算子。<br>prop *** object;<br>const car = { make: 'TOYOTA', model: 'Prius', year: 1997 };<br>'make' in car→true, 'TOYOTA' in car→false`},
 {target:`instanceof`, content:`オブジェクトが指定されたクラスのインスタンスであるかをチェックする演算子。<br>object *** constructor;`},
