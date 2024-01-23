@@ -1,7 +1,7 @@
 `use strict`
 
 let imgState = false;
-let imgOnOffState = "on"
+let imgOnOffState = "on";
 let eventRatio = 0.2;
 let mouseCount = 0;
 
