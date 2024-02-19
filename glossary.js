@@ -145,7 +145,7 @@ const glossary = [
 {target:`setTimeout()`, content:`一定時間後に指定された関数を実行するDOMメソッド。<br>***(code, delay)<br>***(() => {<br>&emsp;&emsp;console.log('Delayed for 1 second.');<br>&emsp;}, '1000');`},
 {target:`location.reload()`, content:`現在のURLの再読み込みのDOMメソッド。<br>***.***()`},
 {target:`setAttribute`, content:`指定された要素の属性の値を設定するDOMメソッド。<br>element.***('data', 'value');→elementにdata属性を追加`},
-{target:`add`, content:`要素にクラスを追加するDOMメソッド。<br>lement.***()→elementをDOMに追加`},
+{target:`add`, content:`要素にクラスを追加するDOMメソッド。<br>element.***()→elementをDOMに追加`},
 {target:`remove`, content:`要素を削除するDOMメソッド。<br>element.***()→elementをDOMから削除`},
 {target:`.addEventListener()`, content:`イベントリスナーを要素に追加するDOMメソッド。リスナーには関数を指定。<br>element.***(type, listener)`},
 {target:`keyup`, content:`キーボードのキーが上がったときに発生するイベント。<br>addEventListener('***', (event) => {});`},
