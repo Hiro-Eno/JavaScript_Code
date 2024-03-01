@@ -129,7 +129,7 @@ const glossary = [
 {target:`.appendChild()`, content:`要素の末尾に子要素を追加するDOMメソッド。<br>element.***()`},
 {target:`.insertBefore()`, content:`要素の前に子要素を追加するDOMメソッド。<br>element.***()`},
 {target:`.animate( , )`, content:`要素に対してアニメーションを適用するDOMメソッド。<br>element.***(keyframes, options)`},
-{target:`.forms`, content:`文書のすべてのフォームを列挙する HTMLCollection オブジェクト。コレクションのそれぞれの項目は、単一のform要素を表すHTMLFormElement。<br>const collection = document.***<br>collection.length →collection 内のアイテム数を返す。<br>collection.item(1) →リスト内の指定された index (先頭はゼロ) 位置にある特定のノードを返す。<br>collection.namedItem('Id') →name で指定した文字列に ID、または代替として name が一致するノードを返す。<br><br>const select = document.***[1]<br>const selectElement = document.***[1].elements[0]<br>document.***['nameのプロパティ名'].elements['nameのプロパティ名']`},
+{target:`.forms`, content:`文書のすべてのformを列挙する HTMLCollection オブジェクト。コレクションのそれぞれの項目は、単一のform要素を表すHTMLFormElement。<br>const collection = document.***<br>collection.length →collection 内のアイテム数を返す。<br>collection.item(1) →リスト内の指定された index (先頭はゼロ) 位置にある特定のノードを返す。<br>collection.namedItem('Id') →name で指定した文字列に ID、または代替として name が一致するノードを返す。<br><br>const select = document.***[1]<br>const selectElement = document.***[1].elements[0]<br>document.***['nameのプロパティ名'].elements['nameのプロパティ名']`},
 {target:`.innerText`, content:`要素のテキストコンテンツを取得または設定するプロパティ。スタイルを反映し、非表示の要素のテキストは返さず人間が読める要素のみを示す。<br>element.***`},
 {target:`.innerHTML`, content:`要素のHTMLコンテンツを取得または設定するプロパティ。<br>element.***`},
 {target:`.textContent`, content:`要素のテキストコンテンツを取得または設定するプロパティ。script とstyle要素を含む、すべての要素の中身を取得。ノード内のすべての要素を返す。値が HTML として解析されないので性能が良くなる。また、 XSS 攻撃を防ぐことができる。<br>element.***`},
