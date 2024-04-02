@@ -21,7 +21,7 @@ const glossary = [
 {target:`.filter()`, content:`配列の要素をフィルタリングするためのメソッド。テストに合格した要素だけを抽出したシャローコピーの配列を作成する。使用するcallbackFnは引数に要素、インデックス、配列を受け取れる。<br>array.***(callbackFn)<br>const array = [12, 5, 8, 5, 130, 12, 44];<br>array.***((x) => x > 10);→[12, 130, 12, 44]<br>array.***((elem, index, array) => array.indexOf(elem) === index);→[12, 5, 8, 130, 44]（ユニークな要素を抽出）`},
 {target:`.forEach()`, content:`配列の各要素に対して指定された関数を実行するメソッド。<br>array.***(callbackFn)<br>array.***((element) => console.log(element));`},
 {target:`.map()`, content:`配列の各要素に対して指定された関数を適用するメソッド。新しい配列を返す。<br>array.***(callbackFn)<br>array.***((x) => x * 2)`},
-{target:`.length`, content:`要素の数や文字数を調べるプロパティ。配列オブジェクトはこのプロパティを監視し、自動的にこの値を配列のコンテンツと同期させ、新しい値を超えた要素は削除される。<br>array.***→要素数<br>'abc'.***→3`},
+{target:`.length`, content:`要素の数や文字数を調べるプロパティ。配列オブジェクトはこのプロパティを監視し、自動的にこの値を配列のコンテンツと同期させ、新しい値を超えた要素は削除される。また、length に現在の長さ以上の値を設定すると疎配列を作成する。これを利用すると連番を生成できる。<br>array.***→要素数<br>'abc'.***→3<br><br>const numbers = [];<br>numbers.*** = 3;<br>console.log(numbers); → [empty × 3]（疎配列）<br><br>const range = (start, stop, step) =><br>&emsp;Array.from({ length: (stop - start) / step + 1 }, (_, i) => start + i * step); → 連番関数<br>range(0, 4, 1); → [0, 1, 2, 3, 4]<br>range(1, 10, 2); → [1, 3, 5, 7, 9]`},
 {target:`.at()`, content:`整数値を受け取り、その位置にある項目を返すメソッド。負の整数は、配列の最後の項目から前へ数え項目を返す。<br>array.***(index)<br>const array = [5, 12, 8, 130, 44];<br>array.***(2)→8<br>array.***(-2)→130`},
 {target:`.pop()`, content:`配列の最後の要素を削除するメソッド。<br>array.***()<br>const array = [5, 12, 8, 130, 44];<br>array.***()→44, array→[5, 12, 8, 130]`},
 {target:`.push()`, content:`配列の最後に要素を加えるメソッド。<br>array.***(element)<br>const array = [5, 12, 8, 130, 44];<br>array.***(100)→[5, 12, 8, 130, 44, 100]`},
