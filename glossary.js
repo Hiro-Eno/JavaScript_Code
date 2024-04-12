@@ -130,7 +130,7 @@ const glossary = [
 {target:`.querySelectorAll()`, content:`指定された CSS セレクターに一致する文書中の要素のリストを示す静的な（生きていない）NodeList を返すDOMメソッド。<br>document.***(selectors)`},
 {target:`.forms`, content:`文書のすべてのformを列挙する HTMLCollection オブジェクト。コレクションのそれぞれの項目は、単一のform要素を表すHTMLFormElement。<br>const collection = document.***<br>collection.length →collection 内のアイテム数を返す。<br>collection.item(1) →リスト内の指定された index (先頭はゼロ) 位置にある特定のノードを返す。<br>collection.namedItem('Id') →name で指定した文字列に ID、または代替として name が一致するノードを返す。<br><br>const select = document.***[1]<br>const selectElement = document.***[1].elements[0]<br>document.***['nameのプロパティ名'].elements['nameのプロパティ名']`},
 {target:`.createElement()`, content:`新しい要素を作成するDOMメソッド。<br>document.***()`},
-{target:`.appendChild()`, content:`要素の末尾に子要素を追加するDOMメソッド。<br>element.***()`},
+{target:`.appendChild()`, content:`要素の末尾に子要素を追加するDOMメソッド。<br>element.***()<br><br>const newButton = document.createElement('button');<br>newIl.***(newButton); → リスト要素にボタンを追加<br>ulElement.***(newIl); → リスト要素を追加`},
 {target:`.insertBefore()`, content:`要素の前に子要素を追加するDOMメソッド。<br>element.***()`},
 {target:`.animate( , )`, content:`要素に対してアニメーションを適用するDOMメソッド。<br>element.***(keyframes, options)`},
 {target:`.innerText`, content:`要素のテキストコンテンツを取得または設定するプロパティ。スタイルを反映し、非表示の要素のテキストは返さず人間が読める要素のみを示す。<br>element.***`},
